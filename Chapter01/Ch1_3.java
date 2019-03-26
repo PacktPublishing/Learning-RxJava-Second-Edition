@@ -12,7 +12,7 @@ public class Ch1_3 {
         sleep(5000);
     }
 
-    public static void sleep(long millis) {
+    private static void sleep(long millis) {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
