@@ -33,7 +33,7 @@ public final class Ch6_16 extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         VBox root = new VBox();
         ListView<String> listView = new ListView<>();
         Button refreshButton = new Button("REFRESH");
