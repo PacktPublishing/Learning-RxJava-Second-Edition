@@ -52,5 +52,11 @@
             <version>19.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.davidmoten</groupId>
+            <artifactId>rxjava2-extras</artifactId>
+            <version>0.1.33</version>
+        </dependency>
+
     </dependencies>
 </project>
