@@ -22,7 +22,13 @@ public class Ch10_15 {
         .filter(s -> s.matches("[A-Za-z]+"))
         //Subscribe the TestObserver
          .subscribe(testObserver);
+
+        System.out.println(testObserver.values());
+
         //This succeeds
         testObserver.assertValues("Foxtrot","Bravo","Tango","Whiskey");
     }
 }
+
+
+
