@@ -1,10 +1,9 @@
+import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxkotlin3.subscribeBy
 
- import io.reactivex.Observable
- import io.reactivex.rxkotlin.subscribeBy
+fun main(args: Array<String>) {
 
- fun main(args: Array<String>) {
-
-     Observable.just("Alpha", "Beta", "Gamma", "Delta", "Epsilon")
-               .count()
-               .subscribeBy ({ println("There are $it items") })
- }
+ Observable.just("Alpha", "Beta", "Gamma", "Delta", "Epsilon")
+           .count()
+           .subscribeBy ({ println("There are $it items") })
+}
