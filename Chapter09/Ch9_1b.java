@@ -1,6 +1,6 @@
 import com.google.common.collect.ImmutableList;
-import io.reactivex.Observable;
-import io.reactivex.ObservableTransformer;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableTransformer;
 
 public class Ch9_1b {
     public static void main(String[] args) {

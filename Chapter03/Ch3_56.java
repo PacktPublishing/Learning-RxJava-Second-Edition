@@ -1,4 +1,4 @@
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 public class Ch3_56 {
     public static void main(String[] args) {
         Observable<String> obs1 = Observable.just("One", "Two", "Three");

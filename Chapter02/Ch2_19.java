@@ -1,5 +1,5 @@
-import io.reactivex.Observable;
-import io.reactivex.observables.ConnectableObservable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.observables.ConnectableObservable;
 
 import java.util.concurrent.TimeUnit;
 

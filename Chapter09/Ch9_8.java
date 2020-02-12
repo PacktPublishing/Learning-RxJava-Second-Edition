@@ -1,6 +1,6 @@
-import io.reactivex.Observable;
-import io.reactivex.ObservableOperator;
-import io.reactivex.observers.DisposableObserver;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableOperator;
+import io.reactivex.rxjava3.observers.DisposableObserver;
 
 import java.util.ArrayList;
 import java.util.List;

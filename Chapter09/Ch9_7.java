@@ -1,8 +1,8 @@
-import io.reactivex.Observable;
-import io.reactivex.ObservableOperator;
-import io.reactivex.Observer;
 import io.reactivex.functions.Action;
-import io.reactivex.observers.DisposableObserver;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableOperator;
+import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.observers.DisposableObserver;
 
 public class Ch9_7 {
     public static void main(String[] args) {

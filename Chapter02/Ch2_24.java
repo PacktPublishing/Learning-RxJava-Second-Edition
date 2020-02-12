@@ -1,4 +1,4 @@
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 public class Ch2_24 {
     private static int start = 1;

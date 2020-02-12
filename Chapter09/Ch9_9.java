@@ -1,5 +1,5 @@
-import io.reactivex.Flowable;
-import io.reactivex.FlowableOperator;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.FlowableOperator;
 import io.reactivex.functions.Action;
 import io.reactivex.subscribers.DisposableSubscriber;
 import org.reactivestreams.Subscriber;

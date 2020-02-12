@@ -1,5 +1,5 @@
- import io.reactivex.Observable
- import io.reactivex.functions.BiFunction
+ import io.reactivex.rxjava3.core.Observable
+ import io.reactivex.rxjava3.functions.BiFunction
 
  fun main(args: Array<String>) {
 

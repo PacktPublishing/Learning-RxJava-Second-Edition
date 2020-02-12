@@ -1,6 +1,6 @@
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.observers.ResourceObserver;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.observers.ResourceObserver;
 
 import java.util.concurrent.TimeUnit;
 

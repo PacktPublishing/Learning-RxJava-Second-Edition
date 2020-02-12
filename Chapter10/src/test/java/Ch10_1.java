@@ -1,4 +1,4 @@
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

@@ -1,5 +1,5 @@
-import io.reactivex.Observable;
-import io.reactivex.observers.TestObserver;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.observers.TestObserver;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -16,16 +16,16 @@ public class Ch10_12 {
         TestObserver<Long> testObserver = new TestObserver<>();
 
         //Assert no subscription has occurred yet
-        testObserver.assertNotSubscribed();
+        //testObserver.assertNotSubscribed();
 
         //Subscribe TestObserver to source
         source.subscribe(testObserver);
 
         //Assert TestObserver is subscribed
-        testObserver.assertSubscribed();
+        testObserver.hasSubscription();
 
         //Block and wait for Observable to terminate
-        testObserver.awaitTerminalEvent();
+        //testObserver.awaitTerminalEvent();
 
         //Assert TestObserver called onComplete()
         testObserver.assertComplete();
