@@ -1,5 +1,4 @@
 import io.reactivex.rxjava3.core.Observable;
-
 import java.util.concurrent.TimeUnit;
 
 public class Ch2_18 {

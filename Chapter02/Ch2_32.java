@@ -1,4 +1,4 @@
-import io.reactivex.Completable;
+import io.reactivex.rxjava3.core.Completable;
 
 public class Ch2_32 {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Ch2_32 {
                 .subscribe(() -> System.out.println("Done!"));
     }
 
-    public static void runProcess() {
+    private static void runProcess() {
        //run process here
     }
 }
