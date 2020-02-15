@@ -13,16 +13,17 @@ public class Ch2_13 extends Application {
     /*
       Before running this application, make sure to do these two steps:
 
-      1) Download JavaFX SDK for your OS (from https://gluonhq.com/products/javafx/)
+      1) Download JavaFX SDK for your OS from https://gluonhq.com/products/javafx/
       and unzip it in any directory.
 
       2) Assuming you have unzipped JavaFX SDK into the folder /path/JavaFX/,
-       add the following options to the Java command that launches this class:
+       add the following VM options to the Java command that launches this class:
 
         --module-path /path/JavaFX/lib
         --add-modules=javafx.controls,javafx.fxml
 
       If you run it from IDE, add these VM options to Run Configuration.
+      Use JRE 9.* to execute this example.
     */
     public static void main(String... args) {
         launch(args);

@@ -6,7 +6,7 @@ public class Ch2_7 {
     public static void main(String[] args) {
         Observable<String> source =
                 Observable.just("Alpha", "Beta", "Gamma");
-        Observer<Integer> myObserver = new Observer<>() {
+        Observer<Integer> myObserver = new Observer<Integer>() {
             @Override
             public void onSubscribe(Disposable d) {
                 //do nothing with Disposable, disregard for now
