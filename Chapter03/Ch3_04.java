@@ -1,6 +1,6 @@
 import io.reactivex.rxjava3.core.Observable;
 
-public class Ch3_4 {
+public class Ch3_04 {
     public static void main(String[] args) {
         Observable.just("Alpha", "Beta", "Gamma")
                 .filter(s -> s.startsWith("Z"))

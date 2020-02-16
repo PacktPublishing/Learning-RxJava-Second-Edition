@@ -2,7 +2,7 @@ import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.Observer;
 import io.reactivex.rxjava3.disposables.Disposable;
 
-public class Ch2_7 {
+public class Ch2_07 {
     public static void main(String[] args) {
         Observable<String> source =
                 Observable.just("Alpha", "Beta", "Gamma");

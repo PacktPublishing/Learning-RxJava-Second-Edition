@@ -3,7 +3,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
-public class Ch3_7 {
+public class Ch3_07 {
     public static void main(String[] args) {
         DateTimeFormatter f = DateTimeFormatter.ofPattern("ss:SSS");
         System.out.println(LocalDateTime.now().format(f));

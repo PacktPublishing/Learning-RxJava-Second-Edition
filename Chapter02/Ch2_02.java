@@ -1,6 +1,6 @@
 import io.reactivex.rxjava3.core.Observable;
 
-public class Ch2_4 {
+public class Ch2_02 {
     public static void main(String[] args) {
         Observable<String> source = Observable.create(emitter -> {
             try {
@@ -12,8 +12,7 @@ public class Ch2_4 {
                 emitter.onError(e);
             }
         });
-        source.map(String::length)
-              .filter(i -> i >= 5)
-              .subscribe(s -> System.out.println("RECEIVED: " + s));
+        source.subscribe(s -> System.out.println("RECEIVED: " + s),
+                Throwable::printStackTrace);
     }
 }

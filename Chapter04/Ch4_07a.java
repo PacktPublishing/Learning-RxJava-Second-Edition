@@ -2,7 +2,7 @@ import io.reactivex.rxjava3.core.Observable;
 
 import java.util.concurrent.TimeUnit;
 
-public class Ch4_7a {
+public class Ch4_07a {
     public static void main(String[] args) {
         Observable<Integer> intervals = Observable.just(2, 0, 3, 10, 7);
         intervals.flatMap(i -> {
