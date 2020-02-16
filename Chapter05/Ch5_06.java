@@ -3,7 +3,7 @@ import io.reactivex.rxjava3.observables.ConnectableObservable;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Ch5_6 {
+public class Ch5_06 {
     public static void main(String[] args) {
         ConnectableObservable<Integer> rndmInts =
                 Observable.range(1, 3)
