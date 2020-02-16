@@ -7,10 +7,10 @@ public class Ch5_04 {
     public static void main(String[] args) {
         ConnectableObservable<Integer> ints =
                 Observable.range(1, 3).publish();
-        Observable<Integer> rndmInts = ints.map(i ->
+        Observable<Integer> rInts = ints.map(i ->
                 randomInt());
-        rndmInts.subscribe(i -> System.out.println("Observer 1: " + i));
-        rndmInts.subscribe(i -> System.out.println("Observer 2: " + i));
+        rInts.subscribe(i -> System.out.println("Observer 1: " + i));
+        rInts.subscribe(i -> System.out.println("Observer 2: " + i));
         ints.connect();
     }
 

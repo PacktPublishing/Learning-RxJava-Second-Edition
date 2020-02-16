@@ -1,5 +1,5 @@
-import io.reactivex.subjects.ReplaySubject;
-import io.reactivex.subjects.Subject;
+import io.reactivex.rxjava3.subjects.ReplaySubject;
+import io.reactivex.rxjava3.subjects.Subject;
 
 public class Ch5_19 {
     public static void main(String[] args) {

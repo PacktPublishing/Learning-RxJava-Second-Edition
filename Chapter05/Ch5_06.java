@@ -1,22 +1,21 @@
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.observables.ConnectableObservable;
-
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Ch5_06 {
     public static void main(String[] args) {
-        ConnectableObservable<Integer> rndmInts =
+        ConnectableObservable<Integer> rInts =
                 Observable.range(1, 3)
                         .map(i -> randomInt()).publish();
 
         //Observer 1 - print each random integer
-        rndmInts.subscribe(i -> System.out.println("Observer 1: " + i));
+        rInts.subscribe(i -> System.out.println("Observer 1: " + i));
 
         //Observer 2 - sum the random integers, then print
-        rndmInts.reduce(0, (total, next) -> total + next)
+        rInts.reduce(0, (total, next) -> total + next)
                 .subscribe(i -> System.out.println("Observer 2: " + i));
 
-        rndmInts.connect();
+        rInts.connect();
     }
 
     public static int randomInt() {
