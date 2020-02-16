@@ -1,10 +1,10 @@
 import io.reactivex.rxjava3.core.Observable;
+import java.util.concurrent.TimeUnit;
 
-public class Ch3_66 {
+public class Ch3_67 {
     public static void main(String[] args) {
         Observable.just("One", "Two", "Three")
-                .filter(s -> s.contains("z"))
-                .single("Four")
+                .timestamp(TimeUnit.SECONDS)
                 .subscribe(i -> System.out.println("Received: " + i));
     }
 }

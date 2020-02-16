@@ -1,5 +1,4 @@
 import io.reactivex.rxjava3.core.Observable;
-
 import java.util.Comparator;
 
 public class Ch3_19 {

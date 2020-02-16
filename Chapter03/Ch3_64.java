@@ -1,17 +1,9 @@
 import io.reactivex.rxjava3.core.Observable;
-import java.util.concurrent.TimeUnit;
+
 public class Ch3_64 {
     public static void main(String[] args) {
-        Observable.interval(2, TimeUnit.SECONDS)
-                .doOnNext(i -> System.out.println("Emitted: " + i))
-                .take(3)
-                .timeInterval(TimeUnit.SECONDS)
-                .subscribe(i -> System.out.println("Received: " + i.time() + " " + i.unit() + " " + i.value()));
-
-        try {
-            TimeUnit.SECONDS.sleep(7);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Observable.just("Alpha", "Beta", "Gamma")
+                .repeat(2)
+                .subscribe(s -> System.out.println("Received: " + s));
     }
 }

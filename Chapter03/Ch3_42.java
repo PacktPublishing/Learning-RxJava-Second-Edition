@@ -6,7 +6,6 @@ public class Ch3_42 {
                 .map(i -> 10 / i)
                 .onErrorReturnItem(-1)
                 .subscribe(i -> System.out.println("RECEIVED: " + i),
-                        e -> System.out.println("RECEIVED ERROR: " + e)
-                );
+                        e -> System.out.println("RECEIVED ERROR: " + e));
     }
 }

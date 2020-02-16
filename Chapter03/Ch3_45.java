@@ -6,7 +6,6 @@ public class Ch3_45 {
                 .map(i -> 10 / i)
                 .onErrorResumeWith(Observable.just(-1).repeat(3))
                 .subscribe(i -> System.out.println("RECEIVED: " + i),
-                        e -> System.out.println("RECEIVED ERROR: " + e)
-                );
+                        e -> System.out.println("RECEIVED ERROR: " + e));
     }
 }

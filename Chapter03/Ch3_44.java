@@ -10,9 +10,7 @@ public class Ch3_44 {
                         return -1;
                     }
                 })
-                .subscribe(i -> System.out.println("RECEIVED: " +
-                                i),
-                        e -> System.out.println("RECEIVED ERROR: " + e)
-                );
+                .subscribe(i -> System.out.println("RECEIVED: " + i),
+                        e -> System.out.println("RECEIVED ERROR: " + e));
     }
 }

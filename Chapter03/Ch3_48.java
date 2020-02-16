@@ -6,7 +6,6 @@ public class Ch3_48 {
                 .map(i -> 10 / i)
                 .retry()
                 .subscribe(i -> System.out.println("RECEIVED: " + i),
-                        e -> System.out.println("RECEIVED ERROR: " + e)
-                );
+                     e -> System.out.println("RECEIVED ERROR: " + e));
     }
 }

@@ -1,5 +1,4 @@
 import io.reactivex.rxjava3.core.Observable;
-
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Ch3_36 {

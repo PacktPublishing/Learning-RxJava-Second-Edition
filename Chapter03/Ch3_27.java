@@ -2,8 +2,14 @@ import io.reactivex.rxjava3.core.Observable;
 
 public class Ch3_27 {
     public static void main(String[] args) {
-        Observable.just(5, 3, 7, 11, 2, 14)
-                .all(i -> i < 10)
-                .subscribe(s -> System.out.println("Received: " + s));
+        Observable.just("One", "Two", "Three")
+                  .filter(s -> s.contains("z"))
+                  .isEmpty()
+                  .subscribe(s -> System.out.println("Received1: " + s));
+
+        Observable.just("One", "Twoz", "Three")
+                .filter(s -> s.contains("z"))
+                .isEmpty()
+                .subscribe(s -> System.out.println("Received2: " + s));
     }
 }

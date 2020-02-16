@@ -2,8 +2,8 @@ import io.reactivex.rxjava3.core.Observable;
 
 public class Ch3_5 {
     public static void main(String[] args) {
-        Observable.range(1, 100)
-                .takeWhile(i -> i < 5)
-                .subscribe(i -> System.out.println("RECEIVED: " + i));
+        Observable.just("Alpha", "Beta", "Gamma")
+                .filter(s -> s.length() != 5)
+                .subscribe(s -> System.out.println("RECEIVED: " + s));
     }
 }

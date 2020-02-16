@@ -6,7 +6,6 @@ public class Ch3_43 {
                 .map(i -> 10 / i)
                 .onErrorReturn(e -> e instanceof ArithmeticException ? -1 : 0)
                 .subscribe(i -> System.out.println("RECEIVED: " + i),
-                        e -> System.out.println("RECEIVED ERROR: " + e)
-                );
+                        e -> System.out.println("RECEIVED ERROR: " + e));
     }
 }

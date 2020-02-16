@@ -1,15 +1,22 @@
 import io.reactivex.rxjava3.core.Observable;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
+
 public class Ch3_63 {
     public static void main(String[] args) {
-        Observable.interval(2, TimeUnit.SECONDS)
-                .doOnNext(i -> System.out.println("Emitted: " + i))
-                .take(3)
-                .timeInterval(TimeUnit.SECONDS)
-                .subscribe(i -> System.out.println("Received: " + i));
+        DateTimeFormatter f = DateTimeFormatter.ofPattern("MM:ss");
+        System.out.println(LocalDateTime.now().format(f));
+        Observable.just("Alpha", "Beta", "Gamma")
+                .delay(3, TimeUnit.SECONDS)
+                .subscribe(s -> System.out.println(LocalDateTime.now().format(f) + " Received: " + s));
+        sleep(5000);
+    }
 
+    private static void sleep(long millis) {
         try {
-            TimeUnit.SECONDS.sleep(7);
+            Thread.sleep(millis);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
