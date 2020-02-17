@@ -24,6 +24,7 @@ public final class Ch7_17 extends Application {
         --add-modules=javafx.controls,javafx.fxml
 
       If you run it from IDE, add these VM options to Run Configuration.
+      Use JRE 9.* to execute this example since JRE 1.8 does not have these options.
     */
     public static void main(String... args) {
         launch(args);

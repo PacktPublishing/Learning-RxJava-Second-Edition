@@ -1,4 +1,4 @@
-import io.reactivex.functions.Action;
+import io.reactivex.rxjava3.functions.Action;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.ObservableOperator;
 import io.reactivex.rxjava3.core.Observer;
@@ -39,7 +39,7 @@ public class Ch9_07 {
                         if (isEmpty) {
                             try {
                                 action.run();
-                            } catch (Exception e) {
+                            } catch (Throwable e) {
                                 onError(e);
                                 return;
                             }

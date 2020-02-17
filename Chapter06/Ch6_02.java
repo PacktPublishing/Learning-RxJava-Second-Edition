@@ -1,6 +1,5 @@
 import io.reactivex.rxjava3.core.Observable;
-
-        import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Ch6_02 {
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class Ch6_02 {
                 .subscribe(System.out::println);
     }
 
-    public static <T> T intenseCalculation(T value) {
+    private static <T> T intenseCalculation(T value) {
         sleep(ThreadLocalRandom.current().nextInt(3000));
         return value;
     }

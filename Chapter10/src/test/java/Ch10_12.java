@@ -18,14 +18,14 @@ public class Ch10_12 {
         TestObserver<Long> testObserver = new TestObserver<>();
 
         //Assert no subscription has occurred yet
-        //testObserver.assertNotSubscribed();        //RxJava 2.x
+        //testObserver.assertNotSubscribed();       //RxJava 2.x
         assertFalse(testObserver.hasSubscription());
 
         //Subscribe TestObserver to source
         source.subscribe(testObserver);
 
         //Assert TestObserver is subscribed
-        //testObserver.assertSubscribed();        //RxJava 2.x
+        //testObserver.assertSubscribed();          //RxJava 2.x
         assertTrue(testObserver.hasSubscription());
 
         //Block and wait for Observable to terminate

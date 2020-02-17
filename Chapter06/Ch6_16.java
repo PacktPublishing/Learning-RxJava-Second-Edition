@@ -1,14 +1,13 @@
 import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import io.reactivex.rxjavafx.observables.JavaFxObservable;
 import io.reactivex.rxjavafx.schedulers.JavaFxScheduler;
-import io.reactivex.schedulers.Schedulers;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
 import java.net.URL;
 import java.util.Scanner;
 
@@ -27,6 +26,7 @@ public final class Ch6_16 extends Application {
         --add-modules=javafx.controls,javafx.fxml
 
       If you run it from IDE, add these VM options to Run Configuration.
+      Use JRE 9.* to execute this example since JRE 1.8 does not have these options.
     */
     public static void main(String... args) {
         launch(args);

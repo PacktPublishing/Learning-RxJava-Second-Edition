@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class Ch6_10 {
     public static void main(String[] args) {
-        Observable.fromCallable(() ->
-                getResponse("https://api.github.com/users/thomasnield/starred")
-        ).subscribeOn(Schedulers.io())
+        String href = "https://api.github.com/users/thomasnield/starred";
+        Observable.fromCallable(() -> getResponse(href))
+                .subscribeOn(Schedulers.io())
                 .subscribe(System.out::println);
         sleep(10000);
     }

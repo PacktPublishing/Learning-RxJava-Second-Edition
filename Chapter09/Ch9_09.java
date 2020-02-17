@@ -1,7 +1,7 @@
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.FlowableOperator;
-import io.reactivex.functions.Action;
-import io.reactivex.subscribers.DisposableSubscriber;
+import io.reactivex.rxjava3.functions.Action;
+import io.reactivex.rxjava3.subscribers.DisposableSubscriber;
 import org.reactivestreams.Subscriber;
 
 public class Ch9_09 {
@@ -40,7 +40,7 @@ public class Ch9_09 {
                         if (isEmpty) {
                             try {
                                 action.run();
-                            } catch (Exception e) {
+                            } catch (Throwable e) {
                                 onError(e);
                                 return;
                             }

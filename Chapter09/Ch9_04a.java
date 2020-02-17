@@ -14,13 +14,7 @@ public class Ch9_04a {
         indexedStrings.subscribe(v -> System.out.println("Subscriber 2: " + v));
     }
 
-    static <T> ObservableTransformer<T,IndexedValue<T>> withIndex() {
-        return upstream -> Observable.defer(() -> {
-            AtomicInteger indexer = new AtomicInteger(-1);
-            return upstream
-                    .map(v -> new IndexedValue<T>(indexer.incrementAndGet(), v));
-        });
-    }    private static <T> ObservableTransformer<T, IndexedValue<T>> withIndex1() {
+    private static <T> ObservableTransformer<T, IndexedValue<T>> withIndex() {
         final AtomicInteger indexer = new AtomicInteger(-1);
         return upstream -> upstream.map(v -> new IndexedValue<T>(indexer.incrementAndGet(), v));
     }
