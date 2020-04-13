@@ -6,7 +6,7 @@ public class Ch2_36 {
             Observable.create(observableEmitter -> {
                 try {
                     for (int i = 0; i < 1000; i++) {
-                        while (!observableEmitter.isDisposed()) {
+                        if (!observableEmitter.isDisposed()) {
                             observableEmitter.onNext(i);
                         }
                         if (observableEmitter.isDisposed()) {
@@ -18,5 +18,6 @@ public class Ch2_36 {
                     observableEmitter.onError(e);
                 }
             });
+        source.subscribe(i -> System.out.println(i)); //prints: 0 ... 999
     }
 }
