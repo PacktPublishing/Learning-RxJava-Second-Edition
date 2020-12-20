@@ -17,7 +17,7 @@ public class Ch9_01b {
     private static <T> ObservableTransformer<T, ImmutableList<T>> toImmutableList() {
         return upstream ->
                 upstream.collect(ImmutableList::<T> builder, ImmutableList.Builder::add)
-                        .map(ImmutableList.Builder::build)
-                        .toObservable(); // must turn Single into Observable
+                        .toObservable() // must turn Single into Observable
+                        .map(ImmutableList.Builder::build);
     }
 }
