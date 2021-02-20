@@ -42,10 +42,10 @@ public class Ch10_12 {
         //Assert there were no errors
         testObserver.assertNoErrors();
 
-        //Assert 5 values were received
+        //Assert 3 values were received
         testObserver.assertValueCount(3);
 
-        //Assert the received emissions were 0, 1, 2, 3, 4
+        //Assert the received emissions were 0, 1, 2
         testObserver.assertValues(0L, 1L, 2L);
     }
 }
